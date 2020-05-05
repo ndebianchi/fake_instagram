@@ -1,5 +1,5 @@
 let Usuario = (sequelize, DataTypes) => {
-    return sequelize.define(
+    let usuario = sequelize.define(
         'Usuario',
         {
             id: {
@@ -26,6 +26,8 @@ let Usuario = (sequelize, DataTypes) => {
         }
 
     );
+   
+    return usuario;
 }
 
 module.exports = Usuario;
